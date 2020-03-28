@@ -1,19 +1,27 @@
 //https://community.plotly.com/t/add-labels-to-time-series-read-from-csv/11586
 
-Plotly.d3.csv("Resources/DOW.csv", function(buf){ 
-  var x_time = [], y_price = [];
+Plotly.d3.csv("Resources/usa_combined.csv", function(buf){ 
+  var x_time = [], y_price = [], y_covidUS = [];
   for (var i = 0; i < buf.length; i++) {
     row = buf[i];
-    x_time.push( row['Time'] );
-    y_price.push( row['Open'] );
+    x_time.push( row['time'] );
+    y_price.push( row['open'] );
+    y_covidUS.push( row['cases'] );
   }
-  var trace1 = {
+  var traceDow = {
     x: x_time,
     y: y_price,
     mode: 'lines',
     type: 'scatter'
   };
-  var data = [trace1];
+  var traceCovidUS = {
+    x: x_time,
+    y: y_covidUS,
+    mode: 'lines',
+    type: 'scatter'
+  };
+
+  var data = [traceDow, traceCovidUS];
   var layout = {
     yaxis: {
        tickformat: '.0' 
