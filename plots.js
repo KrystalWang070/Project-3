@@ -1,3 +1,5 @@
+//https://community.plotly.com/t/add-labels-to-time-series-read-from-csv/11586
+
 Plotly.d3.csv("Resources/DOW.csv", function(buf){ 
   var x_time = [], y_price = [];
   for (var i = 0; i < buf.length; i++) {
