@@ -1,7 +1,6 @@
 //https://community.plotly.com/t/add-labels-to-time-series-read-from-csv/11586
-
 Plotly.d3.csv("Resources/usa_combined.csv", function(buf){ 
-  var x_time = [], y_price = [], y_covidUS = [];
+  var x_time = [], y_priceClose = [], y_covidUS = [];
   for (var i = 0; i < buf.length; i++) {
     row = buf[i];
     x_time.push( row['time'] );
