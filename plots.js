@@ -66,7 +66,7 @@ Plotly.d3.csv("Resources/korea_combined.csv", function(buf){
     yaxis: { title: "Y-Axis"}
     }
   };
-  Plotly.newPlot('plot', data, layout);
+  Plotly.newPlot('plot1', data, layout);
 });
 // UK plot
 Plotly.d3.csv("Resources/uk_combined.csv", function(buf){ 
@@ -100,5 +100,5 @@ Plotly.d3.csv("Resources/uk_combined.csv", function(buf){
       yaxis: { title: "Y-Axis"}
       }
     };
-    Plotly.newPlot('plot', data, layout);
+    Plotly.newPlot('plot2', data, layout);
 });
