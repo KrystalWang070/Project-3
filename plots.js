@@ -1,9 +1,19 @@
+//https://plotly.com/javascript/time-series/
+
+Plotly.d3.csv("https://github.com/KrystalWang070/Project-3/blob/master/Resources/DOW.csv", function(err, rows){
+
+  function unpack(rows, key) {
+  return rows.map(function(row) { return row[key]; });
+}
+
+
+
 // Create traces for different datasets
-var trace1 = {
+var traceDow = {
   x: data.map(row => row.pair),
   y: data.map(row => row.greekSearchResults),
   text: data.map(row => row.greekName),
-  name: "Greek",
+  name: "Dow & Covid-19",
   type: "bar"
 };
 
