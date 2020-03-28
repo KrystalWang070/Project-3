@@ -5,26 +5,31 @@ Plotly.d3.csv("Resources/usa_combined.csv", function(buf){
   for (var i = 0; i < buf.length; i++) {
     row = buf[i];
     x_time.push( row['time'] );
-    y_price.push( row['open'] );
+    y_priceClose.push( row['last'] );
     y_covidUS.push( row['cases'] );
   }
   var traceDow = {
     x: x_time,
-    y: y_price,
+    y: y_priceClose,
     mode: 'lines',
-    type: 'scatter'
+    type: 'scatter',
+    name: 'Dow Jones Close Price'
   };
   var traceCovidUS = {
     x: x_time,
     y: y_covidUS,
     mode: 'lines',
-    type: 'scatter'
+    type: 'scatter',
+    name: 'Covis-19 Reported Cases'
   };
 
   var data = [traceDow, traceCovidUS];
   var layout = {
     yaxis: {
-       tickformat: '.0' 
+       tickformat: '.0', 
+    title: "USA Covid-19 Cases & DOW Jones close price",
+    xaxis: { title: "X-Axis" },
+    yaxis: { title: "Y-Axis"}
     }
   };
   Plotly.newPlot('plot', data, layout);
