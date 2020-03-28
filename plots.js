@@ -19,14 +19,14 @@ Plotly.d3.csv("Resources/usa_combined.csv", function(buf){
     y: y_covidUS,
     mode: 'lines',
     type: 'scatter',
-    name: 'Covid-19 Reported Cases'
+    name: 'COVID-19 Reported Cases'
   };
 
   var data = [traceDow, traceCovidUS];
   var layout = {
     yaxis: {
        tickformat: '.0', 
-    title: "USA Covid-19 Cases & DOW Jones close price",
+    title: "USA Covid-19 Cases & DOW Jones Close Price",
     xaxis: { title: "X-Axis" },
     yaxis: { title: "Y-Axis"}
     }
