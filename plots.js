@@ -19,7 +19,7 @@ Plotly.d3.csv("Resources/usa_combined.csv", function(buf){
     y: y_covidUS,
     mode: 'lines',
     type: 'scatter',
-    name: 'Covis-19 Reported Cases'
+    name: 'Covid-19 Reported Cases'
   };
 
   var data = [traceDow, traceCovidUS];
