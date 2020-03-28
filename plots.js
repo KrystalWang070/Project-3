@@ -86,7 +86,7 @@ Plotly.d3.csv("Resources/uk_combined.csv", function(buf){
     };
     var traceCovidUK = {
       x: x_time2,
-      y: y_covidFTSE,
+      y: y_covidUK,
       mode: 'lines',
       type: 'scatter',
       name: 'COVID-19 Reported Cases'
