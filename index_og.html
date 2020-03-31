@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS (Bootstrap and custom) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css"> 
+
+    <title>COVID-19 Spread and Stock Market Performance</title>
+
+    <!-- CSS (Bootstrap and custom) -->    
+    <script src="https://use.typekit.net/nlq1kdt.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script> 
+
+    <!-- Plotly -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  
+  </head>
+  <body>
+  <div id="container">
+    <video id="background_video" loop muted></video>
+    <div id="video_cover"></div>
+    <div id="overlay"></div>
+
+    <div id="video_controls">
+      <span id="play">
+        <img src="/Libraries/Bideo.js/play.png">
+      </span>
+      <span id="pause">
+        <img src="/Libraries/Bideo.js/pause.png">
+      </span>
+    </div>
+
+    <section id="main_content">
+      <div id="head">
+        <h1>COVID-19 Spread and Stock Market Performance</h1>
+        <p class="info">Project 3: Nate, Alejandra, Andrew, Krystal</p>        
+        <p class="sub_head">Within a couple of months, the coronavirus outbreak has gone from a niche item of global health news to the story of our time. Of course, there are thousands of sub-stories underneath the overwhelming umbrella of COVID-19. We have chosen to focus on the reactions of three major markets to the pandemic. In order to make the most relevant comparisons, we have chosen the financial indices associated with three countries experiencing and responding to the outbreak in divergent ways. We will focus on the Dow Jones Industrial Average (United States of America), the Financial Times Stock Exchange 100 Index (United Kingdom), and the Korea Composite Stock Price Index (South Korea). </p>
+        <p class="info">Bideo.js: A JS library that makes it super easy to add fullscreen background videos. (Hold on! The video might take a while to load.)</p>
+      </div>
+      <div id="plot-us"></div>
+      <div id="plot-kr"></div>
+      <div id="plot-uk"></div>
+      <div id="plot3"></div>
+      <script src="plots.js"></script>  
+
+    </section>
+  </div>
+    <!-- Plots -->
+  
+  <div id="footer">
+    <a href="https://github.com/KrystalWang070/Project-3">GitHub</a>
+
+    <a href="https://www.youtube.com/watch?v=w7JrHIHi8t0" target="_blank">Video by shortenit</a>
+  </div>
+
+  <!-- Bideo -->
+  <script src="/Libraries/Bideo.js/bideo.js"></script>
+  <script src="/Libraries/Bideo.js/main.js"></script>
+
+  <!-- From Bideo, do we need? -->
+  <script>
+    if (window.location.host.indexOf('github.io') !== -1 && window.location.protocol !== "https:") {
+      window.location.protocol = "https";
+    }
+  </script>    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
