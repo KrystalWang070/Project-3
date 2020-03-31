@@ -32,11 +32,6 @@ var layeredAnimation = (function() {
   }
 
   function animateShape(el) {
-
-    var circleEl = el.querySelector('circle');
-    var rectEl = el.querySelector('rect');
-    var polyEl = el.querySelector('polygon');
-
     var animation = anime.timeline({
       targets: el,
       duration: function() { return anime.random(600, 2200); },
@@ -51,30 +46,7 @@ var layeredAnimation = (function() {
         return el.classList.contains('large') ? anime.random(-110, 110) : anime.random(-280, 280);
       }),
       rotate: createKeyframes(function() { return anime.random(-180, 180); }),
-    }, 0);
-    if (circleEl) {
-      animation.add({
-        targets: circleEl,
-        r: createKeyframes(function() { return anime.random(32, 72); }),
-      }, 0);
-    }
-    if (rectEl) {
-      animation.add({
-        targets: rectEl,
-        width: createKeyframes(function() { return anime.random(64, 120); }),
-        height: createKeyframes(function() { return anime.random(64, 120); }),
-      }, 0);
-    }
-    if (polyEl) {
-      animation.add({
-        targets: polyEl,
-        points: createKeyframes(function() { 
-          var scale = anime.random(72, 180) / 100;
-          return trianglePoints.map(function(p) { return p * scale; }).join(' ');
-        }),
-      }, 0);
-    }
-
+    }, 0);    
   }
 
   for (var i = 0; i < shapeEls.length; i++) {
