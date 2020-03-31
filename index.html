@@ -31,20 +31,27 @@
   <body>
 
   <div id ="container">
-    <div id="main_content">
 
-      <div id="head">
-        <h1>COVID-19 Spread and Stock Market Performance</h1>
-        <p class="info">Project 3: Nate, Alejandra, Andrew, Krystal</p>        
-        <p class="sub_head">Within a couple of months, the coronavirus outbreak has gone from a niche item of global health news to the story of our time. Of course, there are thousands of sub-stories underneath the overwhelming umbrella of COVID-19. We have chosen to focus on the reactions of three major markets to the pandemic. In order to make the most relevant comparisons, we have chosen the financial indices associated with three countries experiencing and responding to the outbreak in divergent ways. We will focus on the Dow Jones Industrial Average (United States of America), the Financial Times Stock Exchange 100 Index (United Kingdom), and the Korea Composite Stock Price Index (South Korea). </p>
+    <div id="head">
+      <h1>COVID-19 Spread and Stock Market Performance</h1>
+      <p class="info">Project 3: Nate, Alejandra, Andrew, Krystal</p>        
+      <p class="sub_head">Within a couple of months, the coronavirus outbreak has gone from a niche item of global health news to the story of our time. Of course, there are thousands of sub-stories underneath the overwhelming umbrella of COVID-19. We have chosen to focus on the reactions of three major markets to the pandemic. In order to make the most relevant comparisons, we have chosen the financial indices associated with three countries experiencing and responding to the outbreak in divergent ways. We will focus on the Dow Jones Industrial Average (United States of America), the Financial Times Stock Exchange 100 Index (United Kingdom), and the Korea Composite Stock Price Index (South Korea). </p>
+    </div>
+    
+    <div class="main_content">
+      <div class="col-md-4">
+        <!-- Plot USA -->
+        <div id="plot-us"></div>
       </div>
-      <!-- Plots -->
-      <div id="plot-us"></div>
-      <div id="plot-kr"></div>
-      <div id="plot-uk"></div>
-      <div id="plot3"></div>
+      <div class="col-md-4">
+        <!-- Plot UK -->
+        <div id="plot-uk"></div>
+      </div>
+      <div class="col-md-4">
+        <!-- Plot S Korea -->
+        <div id="plot-uk"></div>
+      </div>
       <script src="plots.js"></script>
-      
       <!-- The div that holds our map -->
       <div id="map-id"></div>
 
