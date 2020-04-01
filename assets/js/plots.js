@@ -11,14 +11,14 @@ Plotly.d3.csv("Resources/usa_combined.csv", function(buf){
   var traceDow = {
     x: x_time,
     y: y_priceClose,
-    mode: 'lines',
+    mode: 'lines+markers',
     type: 'scatter',
     name: 'Dow Jones Close Price'
   };
   var traceCovidUS = {
     x: x_time,
     y: y_covidUS,
-    mode: 'lines',
+    mode: 'lines+markers',
     type: 'scatter',
     name: 'COVID-19 Reported Cases'
   };
@@ -45,14 +45,14 @@ Plotly.d3.csv("Resources/korea_combined.csv", function(buf){
   var traceKOSPI = {
     x: x_time1,
     y: y_priceClose1,
-    mode: 'lines',
+    mode: 'lines+markers',
     type: 'scatter',
     name: 'KOSPI Close Price'
   };
   var traceCovidKorea = {
     x: x_time1,
     y: y_covidKorea,
-    mode: 'lines',
+    mode: 'lines+markers',
     type: 'scatter',
     name: 'COVID-19 Reported Cases'
   };
@@ -80,14 +80,14 @@ Plotly.d3.csv("Resources/uk_combined.csv", function(buf){
     var traceFTSE = {
       x: x_time2,
       y: y_priceClose2,
-      mode: 'lines',
+      mode: 'lines+markers',
       type: 'scatter',
       name: 'FTSE Close Price'
     };
     var traceCovidUK = {
       x: x_time2,
       y: y_covidUK,
-      mode: 'lines',
+      mode: 'lines+markers',
       type: 'scatter',
       name: 'COVID-19 Reported Cases'
     };
