@@ -102,3 +102,31 @@ Plotly.d3.csv("Resources/uk_combined.csv", function(buf){
     };
     Plotly.newPlot('plot-uk', data, layout);
 });
+
+// Global Covid-19
+Plotly.d3.csv("Resources/COVID-19-global.csv", function(buf){ 
+  var x_date = [], y_cases = [];
+  for (var i = 0; i < buf.length; i++) {
+    row = buf[i];
+    x_date.push( row['dateRep'] );
+    y_priceClose2.push( row['cases'] );
+  }
+  var traceCovid = {
+    x: x_date,
+    y: y_cases,
+    mode: 'lines+markers',
+    type: 'scatter',
+    name: 'FTSE Close Price'
+  };
+
+  var data = [traceCovid];
+  var layout = {
+    yaxis: {
+       tickformat: '.0', 
+    title: "Global Daily Cases",
+    xaxis: { title: "X-Axis" },
+    yaxis: { title: "Y-Axis"}
+    }
+  };
+  Plotly.newPlot('plot-covid', data, layout);
+});
