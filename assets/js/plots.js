@@ -116,7 +116,7 @@ Plotly.d3.csv("Resources/COVID-19-global.csv", function(buf){
     y: y_cases,
     mode: 'lines+markers',
     type: 'scatter',
-    name: 'FTSE Close Price'
+    name: 'Covid-19 Cases'
   };
 
   var data = [traceCovid];
