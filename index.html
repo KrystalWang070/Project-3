@@ -16,6 +16,10 @@
     <script src="https://use.typekit.net/nlq1kdt.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script> 
 
+    <!-- Charts JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="path/to/chartjs/dist/Chart.min.css">
+
     <!-- Plotly -->
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="assets/js/plots.js"></script>
@@ -55,19 +59,20 @@
       <div id="chartRow">
         <!-- Plot USA -->
         <div class="col-md-12">
-          <div id="plot-us"></div>
+          <!-- <div id="plot-us"></div> -->
+          <canvas id="myChart" width="400" height="400"></canvas>
         </div>
       </div>
       <div id="chartRow">
         <!-- Plot S Korea -->
         <div class="col-md-12">
-          <div id="plot-kr"></div>
+           <!-- <div id="plot-kr"></div> -->
         </div>
       </div>
       <div id="chartRow">  
         <!-- Plot UK -->
         <div class="col-md-12">
-          <div id="plot-uk"></div>
+          <!-- <div id="plot-uk"></div>-->
         </div>
       </div>
       <!-- Leaflet -->
