@@ -33,68 +33,66 @@
   </head>
 
   <body>
-  <!-- Overall Grid -->
-  <div class="container">
-  <!-- Header, Main info -->
-  <div id="head">
-    <div class="col-md-12">
-      <h1>COVID-19 Spread and Stock Market Performance</h1>
-    </div>
-  </div>
-    <section id="main_content">
-      <div id="sub-head">
+    <!-- Overall Grid -->
+    <div class="container">
+      <!-- Header -->
+      <div class="row">
         <div class="col-md-12">
-        <p class="info">Project 3: Nate, Alejandra, Andrew, Krystal</p>        
-        <p class="sub_head">Within a couple of months, the coronavirus outbreak has gone from a niche item of global health news to the story of our time. Of course, there are thousands of sub-stories underneath the overwhelming umbrella of COVID-19. We have chosen to focus on the reactions of three major markets to the pandemic. In order to make the most relevant comparisons, we have chosen the financial indices associated with three countries experiencing and responding to the outbreak in divergent ways. We will focus on the Dow Jones Industrial Average (United States of America), the Financial Times Stock Exchange 100 Index (United Kingdom), and the Korea Composite Stock Price Index (South Korea). </p>
-        <!-- <p class="info">Bideo.js: A JS library that makes it super easy to add fullscreen background videos. (Hold on! The video might take a while to load.)</p> -->
+          <h1>COVID-19 Spread and Stock Market Performance</h1>
+        </div>
       </div>
-    </div>
-    </section>
-    <section id="charts_container">
-      <div class="charts">
-        <div class="col-md-6">
-          <!-- Plot USA -->
+      <!-- Sub-header -->
+      <div class="row">
+        <div class="col-md-12">
+          <p class="info">Project 3: Nate, Alejandra, Andrew, Krystal</p>
+          <p class="sub_head">Within a couple of months, the coronavirus outbreak has gone from a niche item of global health news to the story of our time. Of course, there are thousands of sub-stories underneath the overwhelming umbrella of COVID-19. We have chosen to focus on the reactions of three major markets to the pandemic. In order to make the most relevant comparisons, we have chosen the financial indices associated with three countries experiencing and responding to the outbreak in divergent ways. We will focus on the Dow Jones Industrial Average (United States of America), the Financial Times Stock Exchange 100 Index (United Kingdom), and the Korea Composite Stock Price Index (South Korea). </p>
+        </div>
+      </div>
+      <!-- Plotly charts -->
+      <div class="row">
+        <!-- Plot USA -->
+        <div class="col-md-3">
           <div id="plot-us"></div>
         </div>
-        <div class="col-md-6">
-          <!-- Plot S Korea -->
+         <!-- Plot S Korea -->
+        <div class="col-md-3">
           <div id="plot-kr"></div>
         </div>
-      </div>
-      <div class="chartsTwo">
-        <div class="col-md-12">
-          <!-- Plot UK -->
+        <!-- Plot UK -->
+        <div class="col-md-3">
           <div id="plot-uk"></div>
         </div>
-      </div> 
-      <div class="map-1">
+      </div>
+      <!-- Leaflet -->
+      <div class="row">
         <div class="col-md-12">
-          <!-- leaflet map -->
+          <!-- Leaflet map -->
           <div id="map"></div>
+          <!-- Leaflet logic -->
           <script type="text/javascript" src="assets/js/logic.js"></script>
           <!-- API Key -->
           <script type="text/javascript" src="assets/js/config.js"></script>
         </div>
       </div>
-      </section>
     </div>
   
-      <div id="footer">
-    <a href="https://github.com/KrystalWang070/Project-3">GitHub</a>
-
-    <a href="https://www.youtube.com/watch?v=w7JrHIHi8t0" target="_blank">Video by shortenit</a>
-  </div>
-
-  <script>
-    if (window.location.host.indexOf('github.io') !== -1 && window.location.protocol !== "https:") {
-      window.location.protocol = "https";
-    }
-  </script>    
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <div id="footer">
+      <a href="https://github.com/KrystalWang070/Project-3">GitHub</a>
+  
+      <a href="https://www.youtube.com/watch?v=w7JrHIHi8t0" target="_blank">Video by shortenit</a>
+    </div>
+  
+    <script>
+      if (window.location.host.indexOf('github.io') !== -1 && window.location.protocol !== "https:") {
+        window.location.protocol = "https";
+      }
+    </script>    
+  
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
   </body>
 </html>
