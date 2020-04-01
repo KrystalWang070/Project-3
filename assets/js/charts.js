@@ -1,6 +1,6 @@
 <script>
-var ctx = document.getElementById('myChart');
-var myChart = new Chart(ctx, {
+var ctx = document.getElementById('chartJS');
+var chartJS = new Chart(ctx, {
     type: 'bar',
     data: {
         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
