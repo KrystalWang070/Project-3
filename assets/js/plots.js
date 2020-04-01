@@ -109,7 +109,7 @@ Plotly.d3.csv("Resources/COVID-19-global.csv", function(buf){
   for (var i = 0; i < buf.length; i++) {
     row = buf[i];
     x_date.push( row['dateRep'] );
-    y_priceClose2.push( row['cases'] );
+    y_cases.push( row['cases'] );
   }
   var traceCovid = {
     x: x_date,
