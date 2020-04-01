@@ -114,8 +114,7 @@ Plotly.d3.csv("Resources/COVID-19-global.csv", function(buf){
   var traceCovid = {
     x: x_date,
     y: y_cases,
-    mode: 'lines+markers',
-    type: 'scatter',
+    type: 'bar',
     name: 'Covid-19 Cases'
   };
 
