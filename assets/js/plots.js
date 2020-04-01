@@ -137,3 +137,39 @@ Plotly.d3.csv("Resources/COVID-19-global.csv", function(buf){
   };
   Plotly.newPlot('plot-covid', data, layout);
 });
+// Covid by country
+Plotly.d3.csv("Resources/COVID-19-global.csv", function(buf){ 
+  var trace_usa= {
+    x: x_time,
+    y: y_covidUS,
+    mode: 'lines+markers',
+    type: 'scatter',
+    name: 'KOSPI Close Price'
+  };
+  var trace_kr = {
+    x: x_time1,
+    y: y_covidKorea,
+    mode: 'lines+markers',
+    type: 'scatter',
+    name: 'COVID-19 Reported Cases'
+  };
+  var trace_kr = {
+    x: x_time2,
+    y: y_covidUK,
+    mode: 'lines+markers',
+    type: 'scatter',
+    name: 'COVID-19 Reported Cases'
+  };
+  var data = [traceFTSE, traceCovidUK];
+    var layout = {
+      width: 600,
+      height: 300,
+      yaxis: {
+         tickformat: '.0', 
+      title: "United Kingdom Covid-19 Cases & FTSE Close Price",
+      xaxis: { title: "X-Axis" },
+      yaxis: { title: "Y-Axis"}
+      }
+    };
+    Plotly.newPlot('plot-uk', data, layout);
+});
