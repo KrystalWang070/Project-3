@@ -166,10 +166,10 @@ Plotly.d3.csv("Resources/COVID-19-global.csv", function(buf){
       height: 300,
       yaxis: {
          tickformat: '.0', 
-      title: "United Kingdom Covid-19 Cases & FTSE Close Price",
+      title: "C",
       xaxis: { title: "X-Axis" },
       yaxis: { title: "Y-Axis"}
       }
     };
-    Plotly.newPlot('plot-uk', data, layout);
+    Plotly.newPlot('plot-gc', data, layout);
 });
