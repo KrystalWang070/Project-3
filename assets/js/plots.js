@@ -24,6 +24,8 @@ Plotly.d3.csv("Resources/usa_combined.csv", function(buf){
   };
   var data = [traceDow, traceCovidUS];
   var layout = {
+    width: 600,
+    height: 300,
     yaxis: {
        tickformat: '.0', 
     title: "USA Covid-19 Cases & DOW Jones Close Price",
@@ -59,6 +61,8 @@ Plotly.d3.csv("Resources/korea_combined.csv", function(buf){
 
   var data = [traceKOSPI, traceCovidKorea];
   var layout = {
+    width: 600,
+      height: 300,
     yaxis: {
        tickformat: '.0', 
     title: "South Korea Covid-19 Cases & KOSPI Close Price",
@@ -93,6 +97,8 @@ Plotly.d3.csv("Resources/uk_combined.csv", function(buf){
     };
     var data = [traceFTSE, traceCovidUK];
     var layout = {
+      width: 600,
+      height: 300,
       yaxis: {
          tickformat: '.0', 
       title: "United Kingdom Covid-19 Cases & FTSE Close Price",
@@ -120,6 +126,8 @@ Plotly.d3.csv("Resources/COVID-19-global.csv", function(buf){
 
   var data = [traceCovid];
   var layout = {
+    width: 600,
+    height: 300,
     yaxis: {
        tickformat: '.0', 
     title: "Global Daily Cases",
