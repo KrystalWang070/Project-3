@@ -19,7 +19,7 @@ var layeredAnimation = (function() {
   var transformEls = document.querySelectorAll('.transform-progress');
   var layeredAnimationEl = document.querySelector('.layered-animations');
   var shapeEls = layeredAnimationEl.querySelectorAll('.shape');
-  var triangleEl = layeredAnimationEl.querySelector('polygon');
+  var triangleEl = layeredAnimationEl.querySelector('circle');
   var trianglePoints = triangleEl.getAttribute('points').split(' ');
   var easings = ['easeInOutQuad', 'easeInOutCirc', 'easeInOutSine', 'spring'];
 
